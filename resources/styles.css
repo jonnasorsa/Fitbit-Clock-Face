@@ -29,11 +29,12 @@
   fill: white;
 }
 
-#hr {
-  width: 20;
-  height: 20;
-  x: 36%;
-  y: 55%;
+#hr1 {
+  visibility: visible;
+}
+
+#hr2 {
+ visibility: hidden;
 }
 
 #batteryLabel {

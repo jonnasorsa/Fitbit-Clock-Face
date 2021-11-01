@@ -1,7 +1,8 @@
 
 <svg class="background">
   <image href = "background.png" />
-  <image id = "hr" href = "hr.png" />
+  <image id = "hr1" href = "hr.png" width="20" height="20" x="36%" y="55%"/>
+  <image id = "hr2" href = "hr.png" width="22" height="22" x="36%" y="55%"/>
   < text id = "timeLabel" />
   < text id = "dateLabel" />
   < text id = "heartrateLabel" />

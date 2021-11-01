@@ -5,8 +5,8 @@ import { zeroPad, } from "../common/utils";     // import user function zeroPad
 import { HeartRateSensor } from "heart-rate";  // import heartrate
 import { battery } from "power";                // import power level
 import userActivity from "user-activity";       // import activity
-
-
+import { display } from "display";
+import * as document from "document";
 
 // Update the clock every second
 clock.granularity = "seconds";
@@ -19,6 +19,7 @@ const distanceHandle = document.getElementById("distanceLabel");
 const heartrateHandle = document.getElementById("heartrateLabel");
 const dateHandle = document.getElementById("dateLabel");
 //const hrHandle = document.getElementById("hr");
+const hrImage = document.getElementById("hr2");
 
 // getting the heartrate data on the screen
 const hrm = new HeartRateSensor();
@@ -64,7 +65,20 @@ distanceHandle.text = distanceString;
 
 let batteryValue = battery.chargeLevel;       // for battery level
 batteryHandle.text = `Battery: ${batteryValue} %`;
+
+
+  if (display.on) {
+    if (secs % 2 == 0) {
+      //tähän tulee animaation 1. osa
+      console.log("parillinen", secs);
+      hrImage.style.visibility = "visible";
+      
+    }
+    else { 
+      // tähän tulee animaation 2. osa
+      console.log("pariton", secs);
+      hrImage.style.visibility = "hidden"
+    }
+  } 
+
 }
-
-
-
