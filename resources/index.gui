@@ -1,0 +1,11 @@
+
+<svg class="background">
+  <image href = "background.png" />
+  <image id = "hr" href = "hr.png" />
+  < text id = "timeLabel" />
+  < text id = "dateLabel" />
+  < text id = "heartrateLabel" />
+  < text id = "batteryLabel" />
+  < text id = "stepsLabel" />
+  < text id = "distanceLabel" />
+</svg>
