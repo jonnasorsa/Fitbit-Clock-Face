@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.3.0"
+  },
+  "fitbit": {
+    "appUUID": "8a921572-7c9d-4b59-86f3-b7a6ebdff119",
+    "appType": "clockface",
+    "appDisplayName": "cat project",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "cat project"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
